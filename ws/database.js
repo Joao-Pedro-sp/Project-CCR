@@ -1,10 +1,6 @@
 const mongoose = require('mongoose');
-const URI = '';
-
-mongoose.set('useNewUrlParser', true);
-mongoose.set('useFindAndModify', false);
-mongoose.set('useCreateIndex', true);
-mongoose.set('useUnifiedTopology', true);
+const URI = 
+  'mongodb+srv://ccruser:Deuseamor2024@cluster0.2qs9wfv.mongodb.net/CCR ';
 
 mongoose
   .connect(URI)

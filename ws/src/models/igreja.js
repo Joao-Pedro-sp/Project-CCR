@@ -6,8 +6,14 @@ const igreja = new Schema({
     type:String,
     required: [true, 'Nome é obrigatorio']
   },
-  foto: String,
-  capa: String,
+  foto: {
+    type: String,
+    required: true
+  },
+  capa: {
+    type: String,
+    required: true
+  },
   email: {
     type:String,
     required: [true, 'E-mail é obrigatorio']
@@ -16,7 +22,10 @@ const igreja = new Schema({
     type: String,
     default: null,
   },
-  telefone: String,
+  telefone: {
+    type: String,
+    required: true
+  },
   endereco: {
     cidade: String,
     uf: String,
@@ -24,7 +33,7 @@ const igreja = new Schema({
     pais: String,
   },
   geo: {
-    tipo: String,
+    type: String,
     coodinates: Array,
   },
   dataCadastro: {
